@@ -43,7 +43,7 @@ var test = async () => {
     for (const guildID in data.channelEuro) {
         if (Object.hasOwnProperty.call(data.channelEuro, guildID)) {
             const channelID = data.channelEuro[guildID];
-            client.channels.cache.get(channelID).send("biiite");
+            client.channels.cache.get(channelID).send("ok");
             
         }
     }
