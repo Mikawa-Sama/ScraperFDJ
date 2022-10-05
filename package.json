@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "canvas": "^2.10.1",
+    "cheerio": "^1.0.0-rc.12",
+    "discord.js": "^14.5.0",
+    "got": "^12.5.1",
+    "jsdom": "^20.0.0",
+    "node-html-parser": "^6.1.1",
+    "node.js": "^0.0.1-security",
+    "request": "^2.88.2"
+  },
+  "name": "scrapefdj",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
