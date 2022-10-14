@@ -29,6 +29,17 @@ client.on('messageCreate', message => {
         data.channelEuro[message.guild.id] = message.channel.id;
         fs.writeFileSync('data.json', JSON.stringify(data));
     }
+    else if (message.content === 'credit') {
+        const embed = new Discord.MessageEmbed()
+            .addField("Crée par : MikawaSama#1757", "MK_Serveur : [Rejoindre](https://discord.gg/8xQbu48cDZ)")
+            .setColor('#00205b')
+            .setImage('attachment://mk.png');
+        for (const guildID in data.channelEuro) {
+            const channelID = data.channelEuro[guildID];
+            client.channels.cache.get(channelID).send({embeds: [embed], files: ['./mk.png']});
+
+        }
+    }
 })
 
 
@@ -99,7 +110,6 @@ var test = async () => {
                 client.channels.cache.get(channelID).send("Pas de nouveau tirage !");
             }
         }
-
     });
 }
 
